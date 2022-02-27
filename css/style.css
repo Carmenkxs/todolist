@@ -27,6 +27,7 @@ body {
   background-image: linear-gradient(160deg,#9FAACC,#394A7D);
   color:white;
   min-height: 100vh;
+  font-family: Roboto;
 }
 
 /******************************************
