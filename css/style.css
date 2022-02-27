@@ -1,0 +1,111 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-image: linear-gradient(160deg,#9FAACC,#394A7D);
+  color:white;
+  min-height: 100vh;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  font-size: 1rem;
+}
+header, form {
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form *{
+  padding: 0.5rem;
+  font-size: 1rem; 
+  background: white;
+}
+
+form input{
+  min-width: 50%;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todoList {
+  /* background-color: white; */
+  list-style: none;
+  min-width: 50%;
+}
+
+.todo {
+  background-color: white;
+  margin: 1rem;
+  min-width: 50%;
+  color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todo li{
+  flex:1;
+}
+
+.delete-btn, .completed-btn{
+  background-color: #394A7D;
+  color:white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button > *{
+  pointer-events: none;
+}
+
+.completed-btn{
+  background-color:green;
+}
+
+.todo-Item{
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.completed{ 
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
